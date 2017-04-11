@@ -1,6 +1,4 @@
 #!/bin/bash
-#grml SMART Script
-
 rescan="n"
 
 while getopts r opt
@@ -9,7 +7,7 @@ do
 		r) rescan="y";;
 	esac
 done
- 
+
 echo "Start"
 
 if [ "$rescan" == "y" ];
@@ -21,8 +19,6 @@ then
 		echo "rescan $y"
 	done
 fi
-
-
 
 for x in {a..f}
 do
