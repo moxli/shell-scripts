@@ -8,7 +8,7 @@ BACKUPS=$(expr "$BACKUPS" - 1)
 done
 DATE=$(date +%Y%m%d%H%M%S)
 rm -f /backup/.dokuwiki-"${DATE}".tar.gz_INPROGRESS
-cd /backup/
+cd /backup/ || exit
 tar -cvpzf .dokuwiki-"${DATE}".tar.gz_INPROGRESS /var/www/dokuwiki/
 mv -f /backup/.dokuwiki-"${DATE}".tar.gz_INPROGRESS /backup/dokuwiki-"${DATE}".tar.gz
 exit 0
