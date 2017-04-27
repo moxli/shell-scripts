@@ -1,18 +1,12 @@
 #!/bin/bash
-#grml SMART Script
-
 test=short
-
 while getopts l opt
 do
 	case $opt in
 		l) test=long;;
 	esac
 done
-
-#eigentlicher Test
 echo "Start"
-
 for x in {a..f}
 do
         echo "/dev/sd$x"
