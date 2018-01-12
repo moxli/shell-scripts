@@ -2,11 +2,11 @@
 #####
 # Purpose: Backup a specific directory and delete old backups
 #####
-# Please change the four variable below according to your needs
+# Please change the four variables below according to your needs
 #####
 SERVICE="dotfiles" # what the finished backup fill will be called
 DIRTOBACKUP="/home/mdorner/dotfiles/" # the directory you want to backup
-BACKUPDIR="/mnt/backup1.moxli.de/dokuwiki/" # where the backup file will be stored
+BACKUPDIR="/mnt/backup1.moxli.de/dotfiles/" # where the backup file will be stored
 KEEP=2 # the number of backups you want to keep
 #####
 if [ ! -d "$BACKUPDIR" ]
