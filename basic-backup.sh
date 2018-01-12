@@ -15,8 +15,7 @@ then
     echo "Creating $BACKUPDIR..."
     if [ ! "$(mkdir -p $BACKUPDIR)" ]
     then
-        echo "Could not create $BACKUPDIR, failed with status $?."
-        exit 0
+        exit 1
     else
         echo "Created $BACKUPDIR successfully."
 
